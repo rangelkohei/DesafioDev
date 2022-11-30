@@ -1,0 +1,28 @@
+h2{
+    font-family: 'Rubik', sans-serif;
+    color: rgb(57, 135, 207);
+    padding: 30PX;
+}
+.btn-system {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: #130f0d solid 2px;
+    border-radius: 20px;
+    color: black;
+    padding: 15px 32px;
+    width: 120px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    background-color:rgb(127, 219, 255);
+    font-size: 18px;
+    transition: all 900ms ease;
+    position: relative;
+    color: black;
+    margin-left: 50%;
+}
+.btn-system:hover{
+    box-shadow: 0 2px 1px 1px black;
+    transition: all .1s ease-in-out
+}

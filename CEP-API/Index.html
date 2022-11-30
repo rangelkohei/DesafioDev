@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio DEV</title>
+    <link rel="stylesheet" href="./CSS/style20.css">
+    <script src="./JAVASCRIPT/scriptAPI.js"></script>
+</head>
+<body>
+   
+
+<div class="forum_user">
+
+    <!--FORMULARIO PARA A PROCURA DO CEP, UTILIZA METODO POST-->
+
+        <form action="./PHP/salva.php" method="post">
+            
+            <!--BARRA DE BUSCA CEP-->
+            <fieldset class="fieldset">
+                <conteiner class="conteiner">
+                    <br><br>
+                        <div>
+                            <h2 class="tittle-1">DESAFIO DEV #1</h2>
+
+                            <input type="number" class="barra1 cep_user" name="cepDB" placeholder="Digite o CEP" id="cep" required>
+                            <br><br>
+                        
+                        </div>
+                </conteiner>
+            </fieldset>
+            
+            <!--RESULTADOS-->
+            <fieldset class="fieldset2">
+                <br>
+                <input type="text"   name="localidade"  placeholder="Localidade"  id="local">
+                <input type="text"   name="bairro"      placeholder="Bairro"      id="bairro">
+                <input type="text"   name="logradouro"  placeholder="Logradouro"  id="logra">
+                <input type="text"   name="ddd"         placeholder="DDD"         id="ddd">
+                <input type="text"   name="uf"          placeholder="UF"          id="uf">
+                <input type="text"   name="ibge"        placeholder="IBGE"        id="ibge">
+                <input type="text"   name="complem"     placeholder="Complemento" id="complem">
+            </fieldset>
+            <br><br>
+
+            <!--BOTAO SALVA REGISTRO-->
+            <div class="divbtn">
+                <!--ESTE BOTÃO IRA SALVAR A CONSULTA NO BANCO DE DADOS-->
+                <button class="btn-system" type="submit">Salvar Registro</button>
+            </div>
+
+        </form>
+
+        <!--BOTÕES-->
+        <div class="divbtn">
+           <!--ESTE BOTÃO IRA REALIZAR A CONSULTA DO ENDEREÇO PELO CEP VIA JAVASCRIPT-->
+           <button  class="btn-system" onclick="ProcuraCep()">Consulta CEP</button>
+
+           <!--ESTE BOTÃO IRA LISTAR AS CONSULTAS QUE O USUARIO SALVOU NO BANCO DE DADOS-->
+               <a href="./PHP/consulta_registros.php"><button class="btn-system">Registros armazenados</button></a>
+        </div>
+
+</div>
+</body>
+</html>
